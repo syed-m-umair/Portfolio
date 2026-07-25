@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syed Muhammad Umayr — DevOps Engineer &amp; Game Developer</title>
+<meta name="description" content="Portfolio of Syed Muhammad Umayr — DevOps engineer in training and Godot game developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<div class="tabbar">
+  <span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>
+  <span class="filename">umayr — portfolio.yml</span>
+</div>
+
+<nav class="pipeline-nav" aria-label="Section navigation">
+  <ol>
+    <li><a href="#about" data-target="about"><span class="node"></span>about</a></li>
+    <li><a href="#experience" data-target="experience"><span class="node"></span>experience</a></li>
+    <li><a href="#projects" data-target="projects"><span class="node"></span>projects</a></li>
+    <li><a href="#skills" data-target="skills"><span class="node"></span>skills</a></li>
+    <li><a href="#contact" data-target="contact"><span class="node"></span>contact</a></li>
+  </ol>
+</nav>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow"># whoami</p>
+        <h1>SYED MUHAMMAD UMAIR</h1>
+        <p class="tagline">I build pipelines. And keep the data flowing through them.<span class="cursor" aria-hidden="true"></span></p>
+        <p class="hero-sub">DevOps engineer in training, with a growing focus on database engineering. Final-year Software Engineering student at NUML Faisalabad, currently interning remotely with CodeAlpha on CI/CD pipelines, Docker, and AWS.</p>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <span class="hero-photo-tag">profile.jpg</span>
+        <img src="Pic/umayr-photo.jpg" alt="Syed Muhammad Umayr">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-inner">
+      <p class="section-label reveal"># about</p>
+      <div class="about-grid">
+        <p class="reveal">I'm a final-year Software Engineering student focused on the space between infrastructure and data: DevOps and database engineering. I build and automate the systems that ship software reliably, and I care just as much about the databases those systems run on — how they're structured, how they connect, and how they behave once they move from a laptop into a container. That intersection is where most of my recent project work sits.</p>
+        <ul class="about-facts stagger">
+          <li class="reveal"><span>education</span> BS Software Engineering, NUML — final year, graduating 2026</li>
+          <li class="reveal"><span>current</span> Remote DevOps Intern @ CodeAlpha — CI/CD, Docker, AWS</li>
+          <li class="reveal"><span>database</span> MySQL — schema integration, containerized connectivity via Docker Compose</li>
+          <li class="reveal"><span>core stack</span> Linux · Docker · Jenkins · Git/GitHub · GitHub Actions · MySQL · Oracle · PostgreSQL · NoSQL </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <div class="experience-inner">
+      <p class="section-label reveal"># experience</p>
+      <ol class="timeline">
+        <li class="reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>DevOps Intern <span>· CodeAlpha (Remote)</span></h3>
+            <p class="timeline-meta">2026 · 4-week program</p>
+            <p>Working hands-on with CI/CD pipelines, Docker, and AWS. Current task: deploying a web server with Docker and Nginx.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Game Development Intern <span>· Gaming Doctrine</span></h3>
+            <p class="timeline-meta">Karachi, Pakistan</p>
+            <p>Contributed to game development work at a Karachi-based game studio.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>BS Software Engineering <span>· NUML Faisalabad</span></h3>
+            <p class="timeline-meta">Final year · Graduating 2026</p>
+            <p>Final year project: Ranikot Chronicles, a 3D action-adventure game built in Godot 4, presented to and well received by the academic panel.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="projects-inner">
+      <p class="section-label reveal"># projects</p>
+      <pre class="matrix-snippet"><code>matrix:
+  track: [devops, database]</code></pre>
+      <div class="matrix">
+        <div class="lane" data-lane="devops">
+          <h3 class="lane-title"><span class="track-dot"></span>devops-track</h3>
+
+          <article class="job-card">
+            <div class="job-card-head">
+              <h4>Dockerized Task API</h4>
+              <span class="badge ok">✓ shipped</span>
+            </div>
+            <p>A Node.js/Express REST API backed by MySQL, containerized with Docker Compose and built with a GitHub Actions CI pipeline. Along the way: debugging Docker networking, and learning that <code>DB_HOST</code> has to be the Compose service name, not <code>localhost</code>.</p>
+            <ul class="tags">
+              <li>Node.js</li><li>Express</li><li>MySQL</li><li>Docker Compose</li><li>GitHub Actions</li>
+            </ul>
+          </article>
+
+          <article class="job-card">
+            <div class="job-card-head">
+              <h4>Java CI/CD Pipeline</h4>
+              <span class="badge ok">✓ shipped</span>
+            </div>
+            <p>A Gradle-based Java application with a GitHub Actions pipeline for automated build and test.</p>
+            <ul class="tags">
+              <li>Java</li><li>Gradle</li><li>GitHub Actions</li>
+            </ul>
+          </article>
+
+          <article class="job-card">
+            <div class="job-card-head">
+              <h4>Dockerized Web Server Deployment</h4>
+              <span class="badge pending">◌ in progress</span>
+            </div>
+            <p>CodeAlpha internship task: deploying a web server using Docker and Nginx.</p>
+            <ul class="tags">
+              <li>Docker</li><li>Nginx</li><li>Linux</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="lane" data-lane="gamedev">
+          <h3 class="lane-title"><span class="track-dot"></span>gamedev-track</h3>
+
+          <article class="job-card">
+            <div class="job-card-head">
+              <h4>Ranikot Chronicles</h4>
+              <span class="badge ok">✓ shipped</span>
+            </div>
+            <p>A 3D action-adventure game built in Godot 4 as my final year project. Enemy AI navigation with NavigationAgent3D, AnimationTree state machines, an Area3D-based enemy spawn system, a SubViewport minimap, and sword combat using both Area3D and RayCast3D hit detection.</p>
+            <ul class="tags">
+              <li>Godot 4</li><li>GDScript</li><li>3D</li><li>Game AI</li><li>Animation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="skills-inner">
+      <p class="section-label reveal"># skills</p>
+
+      <div class="skills-group">
+        <h3 class="reveal"><span class="status-dot ok"></span>core — used in shipped work</h3>
+        <ul class="chip-list stagger">
+          <li class="chip reveal">Linux</li>
+          <li class="chip reveal">Docker</li>
+          <li class="chip reveal">Docker Compose</li>
+          <li class="chip reveal">Jenkins</li>
+          <li class="chip reveal">GitHub Actions</li>
+          <li class="chip reveal">Git / GitHub</li>
+          <li class="chip reveal">MySQL</li>
+          <li class="chip reveal">Oracle</li>
+          <li class="chip reveal">PostgreSQL</li>
+          <li class="chip reveal">NoSQL</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h3 class="reveal"><span class="status-dot pending"></span>currently learning</h3>
+        <ul class="chip-list stagger">
+          <li class="chip chip-pending reveal">Kubernetes <small>— KCNA in progress</small></li>
+          <li class="chip chip-pending reveal">AWS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <p class="section-label reveal"># contact</p>
+      <h2 class="reveal">Let's build something.</h2>
+      <div class="contact-links stagger">
+        <a class="reveal" href="mailto:umair786346@gmail.com">umair786346@gmail.com</a>
+        <a class="reveal" href="https://github.com/syed-m-umair" target="_blank" rel="noopener">github.com/syed-m-umair</a>
+        <a class="reveal" href="https://linkedin.com/in/syed-muhammad-umair-1559a3318" target="_blank" rel="noopener">linkedin.com/in/syed-muhammad-umair-1559a3318</a>
+        <a class="reveal" href="tel:+923176214646">+923176214646</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>built by Umayr · updated 2026</p>
+</footer>
+
+<script>
+  // Smooth-scroll handled by CSS; here we track active/completed sections and reveal content.
+  const navLinks = Array.from(document.querySelectorAll('.pipeline-nav a'));
+  const sections = navLinks.map(a => document.getElementById(a.dataset.target)).filter(Boolean);
+
+  const setActive = (id) => {
+    const idx = navLinks.findIndex(a => a.dataset.target === id);
+    navLinks.forEach((a, i) => {
+      a.classList.toggle('active', i === idx);
+      a.closest('li').classList.toggle('completed', idx > -1 && i < idx);
+    });
+  };
+
+  // Scroll progress bar — fills like a build running top to bottom.
+  const progressBar = document.getElementById('scrollProgress');
+  const updateProgress = () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    if (progressBar) progressBar.style.width = pct + '%';
+  };
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
+  if ('IntersectionObserver' in window) {
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) setActive(entry.target.id);
+      });
+    }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
+    sections.forEach(sec => navObserver.observe(sec));
+
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.job-card').forEach(card => cardObserver.observe(card));
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.job-card, .reveal').forEach(el => el.classList.add('in-view'));
+  }
+</script>
+</body>
+</html>
